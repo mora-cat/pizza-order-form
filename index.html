@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order Form</title>
+  </head>
+  <body>
+    <h1>Gusto Pizza Order Form</h1>
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" >
+      <br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" > <br />
+    </form>
+    <br />
+
+<!--dropdown menu for pizza size-->
+      <!--putting the radio buttons and the checkboxes inside the label allows for clicking on the text to also select the radio button or the checkbox so the person does not have to have that much finger-point  accuracy in order to make the selection -->
+    <fieldset> 
+      <legend>Choose your pizza style</legend>
+      <label>
+        <input type="radio" name="style" value="Gusto Original" />
+        Gusto Original 
+      </label><br>
+      <label>
+        <input type="radio" name="style" value="Sicilian" />
+        Sicilian
+      </label><br>
+      <label>
+        <input type="radio" name="style" value="California" />
+        California
+      </label><br>
+    </fieldset>
+    <br />
+
+    <!--dropdown list for pizza size-->
+    <fieldset>
+      <legend>Choose your pizza size</legend>
+      <label for="size">Select a size</label><br />
+      <select name="size" id="size">
+        <option value="">--Please choose an option--</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+    </fieldset>
+    <br />
+
+<!--checkboxes for 3 toppings-->
+    <fieldset> 
+      <legend>Choose your toppings</legend>
+      <table>
+        <tr>
+          <td>
+            <label>
+              <input type="checkbox" name="toppings" value="pepperoni" />
+              Pepperoni
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="toppings" value="mushrooms" />
+              Mushrooms
+            </label>
+          </td>
+          <td>
+            <label>
+              <input type="checkbox" name="toppings" value="Extra Cheese" />
+              Extra Cheese
+            </label>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+<!--textbox for delivery instructions-->
+    <fieldset> 
+      <legend>Delivery instructions</legend>
+      <label for="instructions">Enter any special delivery instructions: </label><br />
+      <textarea id="instructions" name="instructions" rows="5" cols="50" placeholder="Leave at the front door, etc"></textarea>     
+    </fieldset>
+
+<!--submit button-->
+    <fieldset> 
+      <legend>Submit your order</legend>
+      <input type="submit" value="Place order" />
+    </fieldset>
+
+<!--Table of 6 columns by 4 rows-->
+    <h2>Pretend Pizza Orders</h2>
+    <table border="1">  <!--border attribute makes a 1px border around the whole table and each cell-->
+      <thead>
+        <tr>
+          <th>Customer</th>
+          <th>Pizza style</th>
+          <th>Pizza size</th>
+          <th>Toppings</th>
+          <th>Special instructions</th>
+          <th>Total price</th>
+        </tr>
+      </thead> 
+      <tbody>
+        <tr>
+          <td>Tim Berners-Lee</td>
+          <td>Greek</td>
+          <td>Medium</td>
+          <td>Mushrooms</td>
+          <td>Leave at front door</td>
+          <td>25.05</td>
+        </tr>
+        <tr>
+          <td>World Wide Web Consortium (W3C)</td>
+          <td>Gusto Original</td>
+          <td>Large</td>
+          <td>Pepperoni, Extra cheese</td>
+          <td>Beware of the cat</td>
+          <td>28.75</td>
+        </tr>
+        <tr>
+          <td>Ian Hickson (Google)</td>
+          <td>California</td>
+          <td>Small</td>
+          <td>Mushrooms, Pepperoni</td>
+          <td>Ring doorbell twice</td>
+          <td>22.15</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
