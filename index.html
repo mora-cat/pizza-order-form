@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Pizza Order Form</title>
   </head>
   <body>
     <h1>Gusto Pizza Order Form</h1>
     <form>
-      <label for="fname">First name:</label><br />
+      <label for="fname">First name:</label><br>
       <input type="text" id="fname" name="fname" value="John" >
-      <br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" value="Doe" > <br />
+      <br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe" > <br>
     </form>
-    <br />
+    <br>
 
 <!--dropdown menu for pizza size-->
-      <!--putting the radio buttons and the checkboxes inside the label allows for clicking on the text to also select the radio button or the checkbox so the person does not have to have that much finger-point  accuracy in order to make the selection -->
+      <!--putting the radio buttons and the checkboxes inside the label allows that clicking on the text will also select the radio button or the checkbox so the person does not have to have that much finger-point  accuracy in order to make the selection -->
     <fieldset> 
       <legend>Choose your pizza style</legend>
       <label>
-        <input type="radio" name="style" value="Gusto Original" />
+        <input type="radio" name="style" value="Gusto Original" >
         Gusto Original 
       </label><br>
       <label>
-        <input type="radio" name="style" value="Sicilian" />
+        <input type="radio" name="style" value="Sicilian" >
         Sicilian
-      </label><br>
+      </label>
+      <br>
       <label>
-        <input type="radio" name="style" value="California" />
+        <input type="radio" name="style" value="California" >
         California
-      </label><br>
+      </label>
+      <br>
     </fieldset>
-    <br />
+    <br>
 
     <!--dropdown list for pizza size-->
     <fieldset>
       <legend>Choose your pizza size</legend>
-      <label for="size">Select a size</label><br />
+      <label for="size">Select a size</label><br>
       <select name="size" id="size">
         <option value="">--Please choose an option--</option>
         <option value="small">Small</option>
@@ -46,7 +48,7 @@
         <option value="large">Large</option>
       </select>
     </fieldset>
-    <br />
+    <br>
 
 <!--checkboxes for 3 toppings-->
     <fieldset> 
@@ -78,14 +80,15 @@
 <!--textbox for delivery instructions-->
     <fieldset> 
       <legend>Delivery instructions</legend>
-      <label for="instructions">Enter any special delivery instructions: </label><br />
+      <label for="instructions">Enter any special delivery instructions: </label>
+      <br>
       <textarea id="instructions" name="instructions" rows="5" cols="50" placeholder="Leave at the front door, etc"></textarea>     
     </fieldset>
 
 <!--submit button-->
     <fieldset> 
       <legend>Submit your order</legend>
-      <input type="submit" value="Place order" />
+      <input type="submit" value="Place order" >
     </fieldset>
 
 <!--Table of 6 columns by 4 rows-->
@@ -119,7 +122,7 @@
           <td>28.75</td>
         </tr>
         <tr>
-          <td>Ian Hickson (Google)</td>
+          <td>Ian Hickson (Google HTML5)</td>
           <td>California</td>
           <td>Small</td>
           <td>Mushrooms, Pepperoni</td>
